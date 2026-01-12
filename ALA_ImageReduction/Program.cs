@@ -57,7 +57,7 @@ namespace ALA_ImageReduction
             }
 
             scale = (float)temp / 100;
-            aspectRatio = (float)bmp.Width / (float)bmp.Height;
+            aspectRatio = (float)bmp.Width / (float)bmp.Height; 
 
             bmpReduce = new Bitmap((int)Math.Floor((decimal)bmp.Width * (decimal)scale), (int)Math.Floor((decimal)bmp.Height * (decimal)scale));
             pixelMapReduce = new int[(int)Math.Floor((decimal)bmp.Width * (decimal)scale), (int)Math.Floor((decimal)bmp.Height * (decimal)scale), 3];
